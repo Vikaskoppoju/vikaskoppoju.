@@ -1,0 +1,246 @@
+:root{
+    /* --lavender: #FEF2F2;
+    --tearose: #E5C2C1;
+    --rosegold:#B6666F;
+    --radicalred: #F53163;
+    --lightfrench: #D1A080; */
+    --eb: 'EB Garamond', serif;
+    --mon: 'Montserrat', sans-serif;
+    --rale: 'Raleway', sans-serif;
+    --robo: 'Roboto Condensed', sans-serif;
+    --lightcol:#F6F6F2;
+    --lighthighcol:#BADFE7;
+    --highcol:#388087;
+    --highmediumcol:#6FB3B8;
+    --btncol:#C2EDCE;
+    /* --lightcol:#FEFEFE; */
+    /* --lightcol:#E7E9F0;
+    --lighthighcol:#E7E9F0;
+    --highcol:#081F62;
+    --highmediumcol:#535F80;
+    --btncol:#051747; */
+    /* --lightcol:#FFFFFF; */
+    /* --lightcol:#959794;
+    --lighthighcol:#959794;
+    --highcol:#19171A;
+    --highmediumcol:#45433E;
+    --btncol:#E9322E; */
+}
+/* ------------------------Fonts------------------------ */
+/* font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+section{
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--highcol);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.navicon{
+    display: none;
+}
+.startdiv{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    gap: 50px;
+}
+.project .title{
+    padding-top: 5rem;
+    text-align: center;
+    
+}
+.project{
+    background-color: var(--lightcol);
+}
+.project-card{
+    box-shadow: 0px 0px 10px 0px var(--lighthighcol);
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin: 5rem;
+    gap: 3rem;
+}
+.project-card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+.cert h2{
+    padding-top: 5rem;
+    text-align: center;
+    
+}
+.cert-card{
+    box-shadow: 0px 0px 15px  var(--lighthighcol);
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+}
+.cert-card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+.cert-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin: 5rem;
+    gap: 3rem;
+}
+.intern h2{
+    padding-top: 5rem;
+    text-align: center;
+    
+}
+.intern-card{
+    box-shadow: 0px 0px 10px 0px var(--lighthighcol);
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.intern-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin: 5rem;
+    gap: 3rem;
+}
+.intern-card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+.edu h2{
+    padding-top: 5rem;
+    text-align: center;
+    
+}
+.edu-card{
+    box-shadow: 0px 0px 10px 0px var(--lighthighcol);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    min-width: 700px;
+    line-height: 2rem;
+    
+}
+.edu-card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+.edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightcol);
+}
+.edu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin: 5rem;
+    gap: 3rem;
+}
+.con{
+    padding: 40px;
+}
+.con h2{
+    text-align: center;
+}
+.con-container{
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.con-container a{
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    display: inline;
+    cursor: pointer;
+    
+}
+
+/* @media screen and (max-width: 600px) {
+    .navi.responsive {position: relative;}
+    
+    .navi.responsive  {
+        float: none;
+        
+        top: 20px;
+        padding: 20px;
+        
+    }
+    .navi.responsive a{
+        display: block;
+        padding: 0px;
+    }
+    .navicon{
+        display: block;
+    }
+    
+    
+    }
+    @media screen and (max-width: 600px) {
+        .navi a {display: none;}
+        
+        .navi{
+            display: flex;
+            flex-direction: column; 
+            width: 100%; 
+            background-color: white; 
+        }
+         
+        }
+        .navi {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            text-decoration: none;
+        }
+         */

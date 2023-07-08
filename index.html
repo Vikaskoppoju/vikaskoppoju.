@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VikasKoppoju-WebDeveloper</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@200&family=Raleway:wght@300&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script src="https://kit.fontawesome.com/83ce78bbab.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Crimson+Text:ital@1&family=EB+Garamond:wght@500&family=Metal+Mania&family=Shalimar&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=EB+Garamond:wght@500&family=Montserrat:wght@200&family=Raleway:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    :root {
+        --do: 'Dosis', sans-serif;
+        --eb: 'EB Garamond', serif;
+        --mon: 'Montserrat', sans-serif;
+        --rale: 'Raleway', sans-serif;
+        --robo: 'Roboto Condensed', sans-serif;
+        --lightcol: #F6F6F2;
+        --lighthighcol: #BADFE7;
+        --highcol: #388087;
+        --highmediumcol: #6FB3B8;
+        --btncol: #C2EDCE;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: var(--eb);
+    }
+    p{
+        font-family: var(--do);
+        font-weight: 600;
+    }
+    a{
+        /* font-family: var(--do);
+         */
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* font-weight: 600; */
+        
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    .project-card:hover,
+        .cert-card:hover,
+        .intern-card:hover,
+        .edu-card:hover,.myphoto img:hover {
+            transition: 0.5s;
+    transform: scale(1.1);
+        }
+        .project-card,
+        .cert-card,
+        .intern-card,
+        .edu-card {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+       
+    
+
+    section {
+        min-height: 100vh;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        background-color: var(--highcol);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div {
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .navicon {
+        display: none;
+    }
+    .navi a{
+        text-decoration: none;
+        color: #fff;
+        /* font-weight: bold; */
+        /* letter-spacing: 2px; */
+    }
+
+    .startdiv {
+        margin-top: 100px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .project .title {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .project {
+        background-color: var(--lightcol);
+    }
+
+    .project-card {
+        box-shadow: 0px 0px 15px 0px var(--lighthighcol);
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        text-align: center;
+    }
+    .project-card a{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: #6FB3B8;
+        color: white;
+
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        /* line-height: 2rem; */
+        margin: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .cert h2 {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .cert-card {
+        box-shadow: 0px 0px 15px var(--lighthighcol);
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        text-align: center;
+    }
+    .cert-card a{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: #6FB3B8;
+        color: white;
+
+    }
+
+    .cert-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+        gap: 3rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin: 5rem;
+    }
+
+    .intern h2 {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .intern-card {
+        box-shadow: 0px 0px 10px 0px var(--lighthighcol);
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        text-align: center;
+    }
+    .intern-card a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: var(--highmediumcol);
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    .intern-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+        gap: 3rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin: 5rem;
+    }
+
+    .edu h2 {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .edu-card {
+        box-shadow: 0px 0px 10px 0px var(--lighthighcol);
+        padding: 20px;
+        border-radius: 5px;
+        /* width: 100%;
+        max-width: 700px; */
+        width: 700px;
+        line-height: 2rem;
+        /* text-align: center; */
+    }
+
+    .edu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--lightcol);
+    }
+
+    .edu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin: 5rem;
+        gap: 3rem;
+        
+    }
+
+    .con {
+        padding: 40px;
+    }
+
+    .con h2 {
+        text-align: center;
+    }
+
+    .con-container {
+        line-height: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .con-container a {
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 2rem;
+        display: inline;
+        cursor: pointer;
+    }
+    .contact-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+  min-height: auto;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info,
+.contact-links {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-info h3,
+.contact-links h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p,
+.contact-links ul {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-links ul {
+  padding: 0;
+  list-style: none;
+}
+
+.contact-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-links ul li a {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.contact-links ul li a:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info,
+  .contact-links {
+    /* max-width: 100%; */
+    width: 400px;
+  }
+  .contact-links{
+    width: 400px;
+  }
+}
+.skills-section{
+    min-height: auto;
+} 
+      .skills-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.skills-list li .skill-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.skills-list li:hover .skill-percentage {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.myphoto img{
+    border-radius: 4px;
+  box-shadow: 0px 0px 15px 0px rgba(21, 20, 20, 0.404);
+}
+
+
+    /* Responsive Styling */
+    @media screen and (max-width: 768px) {
+        .startdiv {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            
+            
+        }
+
+        .project-card,
+        .cert-card,
+        .intern-card,
+        .edu-card {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .project-container,
+        .cert-container,
+        .intern-container,
+        .edu-container {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .project-container,
+        .cert-container,
+        .intern-container,
+        .startdiv,
+        .edu-container {
+            flex-wrap:wrap;
+            
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+    .navicon {
+        display: block;
+        text-align: left;
+    }
+
+    .navi {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: var(--highcol);
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navi a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navi a:hover {
+        background-color: var(--highmediumcol);
+    }
+    .myphoto img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div>
+            
+            <a href="javascript:void(0);" class="navicon" onclick="toggleMenu()" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;color: #fff;">
+                <i class="fa fa-bars"></i>
+            </a>
+            <h4 style="font-family:var(--eb); font-size: 30px;color: #fff;">Vikaskoppoju</h4>
+
+        </div>
+        
+        <div class="navi" id="topnavi">
+            <a href="#">Home</a>
+            <a href="#project">Project</a>
+            <a href="#cert">Certifications</a>
+            <a href="#intern">Internships</a>
+            <a href="#edu">Educations</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <section class="main">
+        <div class="startdiv">
+            <div class="myphoto">
+                <img src="/photos/photo123.jpg" width="400px" height="550px">
+            </div>
+            <div style="line-height: 2rem; font-weight: bold;">
+                <h1 >Vikas Kumar Koppoju</h1>
+                <p>Web Developer & Programmer</p>
+                <p>
+                    I am pursuing a Bachelor of Technology in Computer Science and Engineering Stream at Sri Vasavi
+                    Engineering College located at Pedatadepalli, West Godavari, Andhra Pradesh. I am a passionate
+                    student about learning new technologies and am very much interested in developing various software
+                    applications. I am an innovative person who solves problems from a different thinking perspective.
+                    My interest in technologies is very keen and I participated in OASIS INFOBYTE SIP. I had done a
+                    project in Machine Learning in my thrid year as part of our college curriculum. I am working on Web
+                    Applications using React JS, Django and Ml Classifications
+                </p>
+                <a href="https://drive.google.com/file/d/1t3MraEO_gWKItTX1snX_nmYmHF64qIRo/view?usp=sharing" target="_blank" style="padding: 10px; background-color: var(--highcol); text-decoration: none;color: #fff;border-radius: 3px;">Reach my Resume</a>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+
+        <h2 class="title">My Works</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="/t2.jpg" alt="Project" width="100%" height="200px">
+                <h2>Disease Prediction Using ML</h2>
+                <p>
+                    It is a web app that uses the Random Forest 
+Algorithm of ML to predict disease based on the
+symptoms
+                </p>
+                <div style="display: flex; justify-content: space-between;"><a href="https://github.com/Vikaskoppoju/Disease-prediction-using-ML/tree/master" target="_blank">Get Code Here</a><a href="#">Have a Glance</a></div>
+                <!-- <div><a href="#">Have a Glance</a></div> -->
+            </div>
+            <div class="project-card">
+                <img src="/t4.jpg" alt="Project" width="100%" height="200px">
+                <h2>The Tianzu</h2>
+                <p>
+                    It is a web app that displays the 
+culture of Indian states by using a map to 
+navigate to that state
+                </p>
+                <div style="display: flex; justify-content: space-between;"><a href="https://github.com/Vikaskoppoju/The-Tianzu/tree/master" target="_blank">Get Code Here</a><a href="#">Have a Glance</a></div>
+               
+            </div>
+            <div class="project-card">
+                <img src="/t5.jpg" alt="Project" width="100%" height="200px">
+                <h2>Vasavi Voices (Podcast)</h2>
+                <p>
+                    “Vasavi Voices” Podcast website for our college students to interact with our Alumni's 
+college 
+
+                </p>
+                <div style="display: flex; justify-content: space-between;"><a href="#">Get Code Here</a><a href="https://podcast-bgjk.onrender.com/" target="_blank">Have a Glance</a></div>
+                
+            </div>
+            <div class="project-card">
+                <img src="/t6.jpg" alt="Project" width="100%" height="200px">
+                <h2>Landing Page of OTT PlatForm</h2>
+                <p>
+                    It is a webpage of displaying the information about the movies and Tv shows and their details and This web page is fully responsive.
+                </p>
+                <div style="display: flex; justify-content: space-between;"><a href="#">Get Code Here</a><a href="https://vikaskoppoju.github.io/oibsiptask1/" target="_blank">Have a Glance</a></div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="cert" id="cert">
+        <h2>Certificates</h2>
+        <div class="cert-container">
+            <div class="cert-card">
+                <img src="/chack.jpg" alt="" width="100%" height="200px">
+                <p>
+                    I participated in a 24-hour hackathon
+hosted by our college called Hack Overflow 2K22 in collaboration with SCUD on April 
+29&30, 2022. 
+
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                
+            </div>
+            <div class="cert-card">
+                <img src="/caws.jpg" alt="" width="100%" height="200px">
+                <p>
+                    I attended a workshop on "Amazon Web 
+Services Cloud Computing," which was 
+organised by our college in collaboration 
+with BrainOvision Solutions. 
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                
+            </div>
+            <div class="cert-card">
+                <img src="/cdjango.jpg" alt="" width="100%" height="200px">
+                <p>
+                    I took part in a workshop on 'WEB 
+DEVELOPMENT USING DJANGO' organised 
+by our college in collaboration with the 
+APSSDC. 
+
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                
+            </div>
+            <div class="cert-card">
+                <img src="/ciot.jpg" alt="" width="100%" height="250px">
+                <p>
+                    NPTEL certified 75% of the course 
+Introduction to Internet of Things.
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                
+            </div>
+            <div class="cert-card">
+                <img src="/cdse.jpg" alt="" width="100%" height="250px">
+                <p>
+                    NPTEL certified with 52% of the course 
+Data Science for Engineers
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="intern" id="intern">
+        <h2>Internship</h2>
+        <div class="intern-container">
+            <div class="intern-card">
+                <img src="/CINTERN.jpg" alt="" width="100%" height="200px">
+                <h4>MACHINE LEARNING USING PYTHON</h4>
+                <p>
+                    The motto of this intern is to make me familier with machine learning concepts and projects.
+
+By Coincent. 
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                <!-- <div><a href="#">Have a Glance</a></div> -->
+            </div>
+            <div class="intern-card">
+                <img src="/home.png" alt="" width="100%" height="200px">
+                <h4>OBSOFT</h4>
+                <p>
+                    I'm currently working as a FullStack Developer intern at OBSOFT , which was arranged by my college. 
+                </p>
+                <div><a href="#">Get Code Here</a></div>
+                <!-- <div><a href="#">Have a Glance</a></div> -->
+            </div>
+        </div>
+        
+
+    </section>
+    <section class="edu" id="edu">
+        <h2>Education</h2>
+        <div class="edu-container">
+            <div class="edu-card">
+                <h3>Bachelor Of Technology (2020-2024)</h3>
+                <h4>Computer Science And Engineering</h4>
+                <h5>Sri Vasavi Engineering College</h5>
+                <p>CGPA: 8.16</p>
+            </div >
+            <div class="edu-card">
+                <h3>Intermediate (2018-2020)</h3>
+                <h4>Mathematics Physics and Chemistry</h4>
+                <h5>Tirumala Junior College</h5>
+                <p>CGPA: 9.0</p>
+            </div>
+            <div class="edu-card">
+                <h3>10th Class (2017-2018)</h3>
+                <h4>State Board</h4>
+                <h5>Sri Chaitanya E.M School</h5>
+                <p>CGPA: 8.80</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skill">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>
+            <span class="skill-name">Python</span>
+            <span class="skill-percentage">80%</span>
+          </li>
+          <li>
+            <span class="skill-name">Java</span>
+            <span class="skill-percentage">70%</span>
+          </li>
+          <li>
+            <span class="skill-name">Responsive Web Design</span>
+            <span class="skill-percentage">80%</span>
+          </li>
+          <li>
+            <span class="skill-name">UI/UX Design</span>
+            <span class="skill-percentage">80%</span>
+          </li>
+          <li>
+            <span class="skill-name">Web Development</span>
+            <span class="skill-percentage">90%</span>
+          </li>
+          <li>
+            <span class="skill-name">Django</span>
+            <span class="skill-percentage">85%</span>
+          </li>
+          <li>
+            <span class="skill-name">React</span>
+            <span class="skill-percentage">80%</span>
+          </li>
+          <li>
+            <span class="skill-name">SQL</span>
+            <span class="skill-percentage">85%</span>
+          </li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
+      
+    <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:koppojuvikaskumar@gmail.com">koppojuvikaskumar@gmail.com</a></p>
+            <p>Phone: <a href="tel:+916305535725">6305535725</a></p>
+            <p>Address: Kadakatla, Tadepalligudem, India</p>
+          </div>
+          <div class="contact-links">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://github.com/Vikaskoppoju" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <style type="text/css">
+
+
+      </style>
+      
+</body>
+
+</html>
+<script>
+    function toggleMenu() {
+        var nav = document.getElementById("topnavi");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    }
+</script>
