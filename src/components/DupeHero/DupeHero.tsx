@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Typewriter } from "react-simple-typewriter"; // Install this package: npm install react-simple-typewriter
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; // Install this package: npm install react-icons
 
