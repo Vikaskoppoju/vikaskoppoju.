@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "ES2023"],               // ✅ DOM needed for document, JSX
+    "module": "ESNext",
+    "jsx": "react-jsx",                     // ✅ Enables JSX support
+    "moduleResolution": "Node",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"]                        // ✅ Include your code files
 }
