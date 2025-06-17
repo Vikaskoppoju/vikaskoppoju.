@@ -1,0 +1,59 @@
+.work-section {
+    padding: 40px 20px;
+    /* background: linear-gradient(135deg, #7f00ff, #e100ff); */
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+  }
+  
+  .work-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .glow-card {
+    width: 300px;
+    border-radius: 12px;
+    padding: 16px;
+    /* background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #8a2be2, #4b0082); */
+    background-size: 200% 200%;
+    background-position: center;
+    transition: background-position 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glow-card:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 40px rgba(138, 43, 226, 0.6);
+  }
+  
+  .project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  /* Track cursor position to animate gradient */
+  .glow-card::before {
+    content: '';
+    position: absolute;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+    transition: top 0.1s ease, left 0.1s ease;
+    pointer-events: none;
+  }

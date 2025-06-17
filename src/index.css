@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    background-color: #060C1A;
+    font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+}
+h1 to h2{
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+p{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.header{
+  background-color: #060C1A;
+}
+.typing-cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: white;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
