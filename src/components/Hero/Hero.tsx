@@ -46,7 +46,7 @@ export default function Hero() {
                 sequence={[
                   "Full Stack Developer", // First text
                   3000, // Pause for 3 seconds
-                  "Freelancer", // Second text
+                  "Wordpress Developer", // Second text
                   3000, // Pause for 3 seconds
                   "Power BI Analyst", // Third text
                   3000, // Pause for 3 seconds
