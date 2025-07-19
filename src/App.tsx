@@ -7,20 +7,20 @@ import Hero from "./components/Hero/Hero"
 import ProjectSlideshow from "./components/ProjectSlideshow/ProjectSlideshow"
 import SkillShowcase from "./components/SkillShowcase/SkillShowcase"
 import WorkExperience from "./components/WorkExperience/WorkExperience"
-import VideoLoader from "./components/VideoLoader/VideoLoader" // ✅ Import VideoLoader
+// import VideoLoader from "./components/VideoLoader/VideoLoader" // ✅ Import VideoLoader
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true) // ✅ State to toggle loader
+  // const [isLoading, setIsLoading] = useState(true) // ✅ State to toggle loader
 
-  const handleVideoEnd = () => {
-    setIsLoading(false) // ✅ Hide loader after video ends
-  }
+  // const handleVideoEnd = () => {
+  //   setIsLoading(false) // ✅ Hide loader after video ends
+  // }
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <VideoLoader onFinish={handleVideoEnd} />
-      ) : (
+      ) : ( */}
         <div className="App">
           <Header />
           <Hero />
@@ -31,7 +31,7 @@ function App() {
           <EducationTimeline />
           <Footer />
         </div>
-      )}
+      {/* )} */}
     </>
   )
 }

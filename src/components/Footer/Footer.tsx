@@ -41,12 +41,12 @@ const Footer: React.FC = () => {
             Instagram
           </a>
           <a
-            href="https://www.dribbble.com/yourprofile"
-            target="_blank"
+            href="mailto:koppojuvikaskumar@gmail.com"
+            // target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition-colors"
           >
-            Dribbble
+            Gmail
           </a>
         </div>
       </div>

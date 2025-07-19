@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import me1 from "../../assets/images/avatar.png";
@@ -17,7 +16,7 @@ export default function Hero() {
             className="relative flex justify-center order-1 sm:order-2"
           >
             <motion.img
-              className="w-64 h-auto sm:w-80 sm:h-auto lg:w-[420px] lg:h-auto object-cover rounded-md shadow-xl"
+              className="w-64 h-auto sm:w-80 sm:h-auto sm:py-20 lg:w-[420px] lg:h-auto object-cover rounded-md shadow-xl pb-10"
               src={me1}
               alt="Vikas Kumar Koppoju"
               whileInView={{
@@ -60,13 +59,14 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="max-w-lg mt-3 text-lg leading-relaxed text-gray-300 md:mt-8 text-justify">
-              Passionate about crafting innovative solutions and transforming ideas into reality.
+              Passionate about crafting innovative solutions and transforming
+              ideas into reality.
             </p>
 
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row items-center sm:text-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a
-                href="your-resume-link-here" // Replace with your resume link
+                href="https://drive.google.com/file/d/1dNfOJVyLHiEby_mYb1NYVYQm9inNbrdB/view?usp=sharing" // Replace with your resume link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 md:text-lg font-medium text-black bg-[#FFD700] hover:bg-[#E6C200] rounded-xl shadow transition"
@@ -76,7 +76,7 @@ export default function Hero() {
               <div className="flex space-x-4">
                 {/* Social Media Icons */}
                 <a
-                  href="https://linkedin.com/in/your-profile" // Replace with your LinkedIn link
+                  href="https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/" // Replace with your LinkedIn link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-[#0A66C2] transition"
@@ -84,7 +84,7 @@ export default function Hero() {
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a
-                  href="https://github.com/your-username" // Replace with your GitHub link
+                  href="https://github.com/Vikaskoppoju" // Replace with your GitHub link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-gray-500 transition"
@@ -92,7 +92,7 @@ export default function Hero() {
                   <i className="fab fa-github"></i>
                 </a>
                 <a
-                  href="https://twitter.com/your-username" // Replace with your Twitter link
+                  href="https://x.com/VikasKoppoju" // Replace with your Twitter link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-[#1DA1F2] transition"

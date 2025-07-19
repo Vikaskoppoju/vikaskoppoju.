@@ -17,7 +17,7 @@ const domainProjects: Project[] = [
     description:
       "WordPress-based responsive portfolio designed for a professor from Saudi Arabia, highlighting research, publications, and achievements.",
     image: "/assets/images/khalid.png",
-    link: "https://khalidulrehman.com", // replace with actual URL
+    link: "https://drkhalidhakeem.com/", // replace with actual URL
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const domainProjects: Project[] = [
     description:
       "Professional WordPress portfolio created for a Saudi-based academic, emphasizing scholarly contributions and academic expertise.",
     image: "/assets/images/ibrar.png",
-    link: "https://dribrarahmed.com", // replace with actual URL
+    link: "https://learnwithibrar.com/", // replace with actual URL
   },
 ];
 
@@ -42,7 +42,7 @@ export default function DomainProjects() {
           viewport={{ once: true }}
           className="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-16 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500"
         >
-          Freelance Projects
+          Real Time Projects
         </motion.h2>
 
         {/* Cards Grid */}

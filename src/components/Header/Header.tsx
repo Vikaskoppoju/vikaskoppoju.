@@ -40,9 +40,9 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <button className="bg-[#FFD700] text-black font-semibold py-1.5 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300">
-                Hire Me
-              </button>
+              <a href="mailto:koppojuvikaskumar@gmail.com" className="bg-[#FFD700] text-black font-semibold py-1.5 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300">
+                Let's chat
+              </a>
             </li>
           </ul>
         </nav>

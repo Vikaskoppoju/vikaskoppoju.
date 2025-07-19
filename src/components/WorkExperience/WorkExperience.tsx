@@ -24,7 +24,7 @@ export default function WorkExperience() {
             className="relative rounded-xl shadow-lg overflow-hidden border border-gray-700"
           >
             <div className="relative p-6">
-              <span className="text-lg text-[#FFD700] font-medium">Mar 2025 - Present</span>
+              <span className="text-lg text-[#FFD700] font-medium">Mar 2025 - May 2025</span>
               <h3 className="text-2xl sm:text-3xl font-semibold mt-2">Data Analyst Power BI Trainee</h3>
               <p className="mt-2 text-lg font-light">Revature</p>
               <p className="mt-4 text-base font-normal">
