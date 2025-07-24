@@ -17,7 +17,7 @@ const domainProjects: Project[] = [
     description:
       "This Power BI dashboard provides a comprehensive analysis of investment strategies, showcasing key metrics like ROI, risk levels, and market trends. It helps investors make informed decisions by visualizing complex data in an intuitive format.",
     image: "/assets/images/powerbi1.png",
-    link: "https://drkhalidhakeem.com/",
+    link: "https://drive.google.com/file/d/1UK08bGkD_RAfqh1VdIotOL_QbBIj0dcX/view?usp=sharing",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const domainProjects: Project[] = [
     description:
       " The dashboard gives a clear snapshot of sales performance, product and regional trends, and customer preferences. These insights can help in targeted marketing, stock planning, and store-level strategy improvements. With more data over time, deeper trends and growth metrics can be further explored",
     image: "/assets/images/powerbi2.png",
-    link: "https://learnwithibrar.com/",
+    link: "https://drive.google.com/file/d/1pa2zcDElop--kfpmZm-opypzydoybSLF/view?usp=sharing",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const domainProjects: Project[] = [
     title: "Deep Fake Detection",
     description:
       "Built a Django-based app for uploading deepfake videos and detecting fakes with confidence scores. Trained on celeb-df, DFD Challenge, and FF++ datasets using ResNeXt + LSTM architecture.",
-    image: "/assets/images/random.jpg",
+    image: "/assets/images/deepfake.png",
     link: "https://github.com/Vikaskoppoju/deepfake",
   },
   {
