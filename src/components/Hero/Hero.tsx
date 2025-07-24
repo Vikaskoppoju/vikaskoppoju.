@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import me1 from "../../assets/images/avatar.png";
+import me1 from "../../assets/images/me1.png";
 
 export default function Hero() {
   return (

@@ -25,10 +25,10 @@ function App() {
           <Header />
           <Hero />
           <WorkExperience />
-          <ProjectSlideshow />
+          {/* <ProjectSlideshow /> */}
           <DomainProjects />
           <SkillShowcase />
-          <EducationTimeline />
+          {/* <EducationTimeline /> */}
           <Footer />
         </div>
       {/* )} */}

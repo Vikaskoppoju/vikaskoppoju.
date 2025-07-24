@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-[#060C1A] h-20 shadow-md shadow-[#FFD700]/10">
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-5 px-4 md:px-6 relative">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-7 px-4 md:px-6 relative">
         {/* Mobile Logo */}
         <h1 className="block md:hidden text-lg font-bold text-white">
           Vikas Kumar Koppoju
@@ -34,11 +34,11 @@ const Header = () => {
                 Skills
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#education" className="hover:text-[#FFD700] transition-all duration-200">
                 Education
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="mailto:koppojuvikaskumar@gmail.com" className="bg-[#FFD700] text-black font-semibold py-1.5 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300">
                 Let's chat
@@ -91,11 +91,11 @@ const Header = () => {
                 Skills
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#education" className="hover:text-[#FFD700] transition-all duration-200">
                 Education
               </a>
-            </li>
+            </li> */}
             <li>
               <button className="bg-[#FFD700] text-black font-semibold py-2 px-5 rounded-lg hover:bg-yellow-400 mt-2 transition-all duration-300">
                 Hire Me
