@@ -66,7 +66,7 @@ export default function Hero() {
             {/* Buttons */}
             <div className="mt-6 flex flex-col sm:flex-row items-center sm:text-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a
-                href="https://drive.google.com/file/d/1dNfOJVyLHiEby_mYb1NYVYQm9inNbrdB/view?usp=sharing" // Replace with your resume link
+                href="https://drive.google.com/file/d/153QfMdBJAqso_tWlKDd6rYXH64DU76XA/view?usp=sharing" // Replace with your resume link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 md:text-lg font-medium text-black bg-[#FFD700] hover:bg-[#E6C200] rounded-xl shadow transition"
@@ -91,14 +91,14 @@ export default function Hero() {
                 >
                   <i className="fab fa-github"></i>
                 </a>
-                <a
+                {/* <a
                   href="https://x.com/VikasKoppoju" // Replace with your Twitter link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-[#1DA1F2] transition"
                 >
                   <i className="fab fa-twitter"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>
