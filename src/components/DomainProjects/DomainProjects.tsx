@@ -55,6 +55,24 @@ const domainProjects: Project[] = [
     image: "/assets/images/vasavi.png",
     link: "https://srivasaviengg.ac.in/",
   },
+  {
+    id: 6,
+    domain: "Wordpress Development",
+    title: "Dr Khalid's Portfolio",
+    description:
+      "Developed a professional portfolio website for Dr. Khalid Hakeem using WordPress, showcasing his expertise and achievements in a clean, modern design.",
+    image: "/assets/images/khalid.png",
+    link: "https://drkhalidhakeem.com/",
+  },
+  {
+    id: 7,
+    domain: "Wordpress Development",
+    title: "Dr Ibrar's Portfolio",
+    description:
+      "Developed a professional portfolio website for Dr. Ibrar using WordPress, showcasing his expertise and achievements in a clean, modern design.",
+    image: "/assets/images/ibrar.png",
+    link: "https://learnwithibrar.com/",
+  },
 ];
 
 
